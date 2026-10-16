@@ -1,0 +1,62 @@
+﻿[
+  {
+    "MSSV": "2411001",
+    "HoVaTenLot": "Nguyễn Văn",
+    "Ten": "An",
+    "NgaySinh": "2004-05-15T00:00:00",
+    "Phai": true,
+    "Lop": "CDKT24A",
+    "SoCMND": "123456789",
+    "SoDienThoai": "0901234567",
+    "DiaChi": "123 Đường A, TP.HCM",
+    "MonDK": [ "Mạng máy tính", "Hệ điều hành" ]
+  },
+  {
+    "MSSV": "2411002",
+    "HoVaTenLot": "Trần Thị",
+    "Ten": "Bình",
+    "NgaySinh": "2004-08-20T00:00:00",
+    "Phai": false,
+    "Lop": "CDKT24A",
+    "SoCMND": "987654321",
+    "SoDienThoai": "0912345678",
+    "DiaChi": "456 Đường B, TP.HCM",
+    "MonDK": [ "Lập trình CSDL", "Lập trình mạng" ]
+  },
+  {
+    "MSSV": "2411003",
+    "HoVaTenLot": "Lê Văn",
+    "Ten": "Cường",
+    "NgaySinh": "2003-12-10T00:00:00",
+    "Phai": true,
+    "Lop": "CDKT24B",
+    "SoCMND": "456789123",
+    "SoDienThoai": "0923456789",
+    "DiaChi": "789 Đường C, TP.HCM",
+    "MonDK": [ "Mạng máy tính", "Đồ án cơ sở" ]
+  },
+  {
+    "MSSV": "2411004",
+    "HoVaTenLot": "Phạm Thị",
+    "Ten": "Dung",
+    "NgaySinh": "2004-03-05T00:00:00",
+    "Phai": false,
+    "Lop": "CDKT24C",
+    "SoCMND": "321654987",
+    "SoDienThoai": "0934567890",
+    "DiaChi": "321 Đường D, TP.HCM",
+    "MonDK": [ "Hệ điều hành", "Lập trình CSDL" ]
+  },
+  {
+    "MSSV": "2411005",
+    "HoVaTenLot": "Hoàng Văn",
+    "Ten": "Em",
+    "NgaySinh": "2003-11-25T00:00:00",
+    "Phai": true,
+    "Lop": "CDKT24B",
+    "SoCMND": "789123456",
+    "SoDienThoai": "0945678901",
+    "DiaChi": "654 Đường E, TP.HCM",
+    "MonDK": [ "Lập trình mạng", "Đồ án cơ sở" ]
+  }
+]

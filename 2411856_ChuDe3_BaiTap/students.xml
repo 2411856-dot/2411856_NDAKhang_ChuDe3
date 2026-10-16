@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Student>
+		<MSSV>2411001</MSSV>
+		<HoVaTenLot>Nguyễn Văn</HoVaTenLot>
+		<Ten>An</Ten>
+		<NgaySinh>2004-05-15T00:00:00</NgaySinh>
+		<Phai>true</Phai>
+		<Lop>CDKT24A</Lop>
+		<SoCMND>123456789</SoCMND>
+		<SoDienThoai>0901234567</SoDienThoai>
+		<DiaChi>123 Đường A, TP.HCM</DiaChi>
+		<MonDK>
+			<string>Mạng máy tính</string>
+			<string>Hệ điều hành</string>
+		</MonDK>
+	</Student>
+	<Student>
+		<MSSV>2411002</MSSV>
+		<HoVaTenLot>Trần Thị</HoVaTenLot>
+		<Ten>Bình</Ten>
+		<NgaySinh>2004-08-20T00:00:00</NgaySinh>
+		<Phai>false</Phai>
+		<Lop>CDKT24A</Lop>
+		<SoCMND>987654321</SoCMND>
+		<SoDienThoai>0912345678</SoDienThoai>
+		<DiaChi>456 Đường B, TP.HCM</DiaChi>
+		<MonDK>
+			<string>Lập trình CSDL</string>
+			<string>Lập trình mạng</string>
+		</MonDK>
+	</Student>
+	<Student>
+		<MSSV>2411003</MSSV>
+		<HoVaTenLot>Lê Văn</HoVaTenLot>
+		<Ten>Cường</Ten>
+		<NgaySinh>2003-12-10T00:00:00</NgaySinh>
+		<Phai>true</Phai>
+		<Lop>CDKT24B</Lop>
+		<SoCMND>456789123</SoCMND>
+		<SoDienThoai>0923456789</SoDienThoai>
+		<DiaChi>789 Đường C, TP.HCM</DiaChi>
+		<MonDK>
+			<string>Mạng máy tính</string>
+			<string>Đồ án cơ sở</string>
+		</MonDK>
+	</Student>
+	<Student>
+		<MSSV>2411004</MSSV>
+		<HoVaTenLot>Phạm Thị</HoVaTenLot>
+		<Ten>Dung</Ten>
+		<NgaySinh>2004-03-05T00:00:00</NgaySinh>
+		<Phai>false</Phai>
+		<Lop>CDKT24C</Lop>
+		<SoCMND>321654987</SoCMND>
+		<SoDienThoai>0934567890</SoDienThoai>
+		<DiaChi>321 Đường D, TP.HCM</DiaChi>
+		<MonDK>
+			<string>Hệ điều hành</string>
+			<string>Lập trình CSDL</string>
+		</MonDK>
+	</Student>
+	<Student>
+		<MSSV>2411005</MSSV>
+		<HoVaTenLot>Hoàng Văn</HoVaTenLot>
+		<Ten>Em</Ten>
+		<NgaySinh>2003-11-25T00:00:00</NgaySinh>
+		<Phai>true</Phai>
+		<Lop>CDKT24B</Lop>
+		<SoCMND>789123456</SoCMND>
+		<SoDienThoai>0945678901</SoDienThoai>
+		<DiaChi>654 Đường E, TP.HCM</DiaChi>
+		<MonDK>
+			<string>Lập trình mạng</string>
+			<string>Đồ án cơ sở</string>
+		</MonDK>
+	</Student>
+</ArrayOfStudent>
