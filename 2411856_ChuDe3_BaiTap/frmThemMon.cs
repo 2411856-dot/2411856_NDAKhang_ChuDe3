@@ -22,7 +22,7 @@ namespace _2411856_ChuDe3_BaiTap
         }
         private void frmThemMon_Load(object sender, EventArgs e)
         {
-            // Có thể để trống hoặc viết code khởi tạo cho form thêm môn học ở đây
+            
         }
 
         private void btnThem_Click(object sender, EventArgs e)

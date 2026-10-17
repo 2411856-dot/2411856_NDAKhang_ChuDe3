@@ -249,8 +249,10 @@ namespace _2411856_ChuDe3_BaiTap
 
         private void btnThemMoi_Click(object sender, EventArgs e)
         {
+            mtxtMSSV.ReadOnly = false;
             if (!KiemTraDuLieu())
                 return;
+           
 
             Student sv = GetStudent();
 
@@ -258,6 +260,7 @@ namespace _2411856_ChuDe3_BaiTap
             {
                 MessageBox.Show("MSSV đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 mtxtMSSV.Focus();
+
                 return;
             }
 
@@ -279,10 +282,13 @@ namespace _2411856_ChuDe3_BaiTap
                 return;
 
             HienThiSinhVien(sv);
+      
+            mtxtMSSV.ReadOnly = true;
         }
 
         private void XoaTrang()
         {
+            mtxtMSSV.ReadOnly = false;
             mtxtMSSV.Clear();
             txtHoVaTenLot.Clear();
             txtTen.Clear();
@@ -392,6 +398,7 @@ namespace _2411856_ChuDe3_BaiTap
         {
             if (!KiemTraDuLieu())
                 return;
+            mtxtMSSV.ReadOnly = true;
 
             Student sv = GetStudent();
 
@@ -410,11 +417,7 @@ namespace _2411856_ChuDe3_BaiTap
 
         private string LayNamNhapHoc(string lop)
         {
-            string lopUpper = lop.Trim().ToUpper();
-            if (lopUpper.Contains("K42")) return "18";
-            if (lopUpper.Contains("K43")) return "19";
-            if (lopUpper.Contains("K44")) return "20";
-            if (lopUpper.Contains("K45")) return "21";
+            string lopUpper = lop.Trim().ToUpper(); 
             if (lopUpper.Contains("K46")) return "22";
             if (lopUpper.Contains("K47")) return "23";
             if (lopUpper.Contains("K48")) return "24";
@@ -468,6 +471,11 @@ namespace _2411856_ChuDe3_BaiTap
                     clbMonHocDK.ClearSelected();
                 }
             }
+        }
+
+        private void frmChinh_Click(object sender, EventArgs e)
+        {
+            XoaTrang();
         }
     }
 

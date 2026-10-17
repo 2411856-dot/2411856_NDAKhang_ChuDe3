@@ -102,6 +102,7 @@
             // 
             // cboLop
             // 
+            this.cboLop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLop.FormattingEnabled = true;
             this.cboLop.Items.AddRange(new object[] {
             "CTK46",

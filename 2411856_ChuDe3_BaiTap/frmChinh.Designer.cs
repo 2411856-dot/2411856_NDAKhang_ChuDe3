@@ -63,13 +63,13 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cmsSinhVien = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.mnXoaSinhVien = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnCapNhat = new System.Windows.Forms.Button();
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cmsSinhVien = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.mnXoaSinhVien = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnCapNhat = new System.Windows.Forms.Button();
             this.cmsMonHoc.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.cmsSinhVien.SuspendLayout();
@@ -244,6 +244,7 @@
             // 
             // cboLop
             // 
+            this.cboLop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLop.FormattingEnabled = true;
             this.cboLop.Items.AddRange(new object[] {
             "CTK46",
@@ -266,6 +267,7 @@
             // 
             // clbMonHocDK
             // 
+            this.clbMonHocDK.ColumnWidth = 200;
             this.clbMonHocDK.ContextMenuStrip = this.cmsMonHoc;
             this.clbMonHocDK.FormattingEnabled = true;
             this.clbMonHocDK.Items.AddRange(new object[] {
@@ -278,6 +280,7 @@
             "Lập trình trên thiết bị di động",
             "An toàn và bảo mật hệ thống"});
             this.clbMonHocDK.Location = new System.Drawing.Point(166, 261);
+            this.clbMonHocDK.MultiColumn = true;
             this.clbMonHocDK.Name = "clbMonHocDK";
             this.clbMonHocDK.Size = new System.Drawing.Size(554, 89);
             this.clbMonHocDK.TabIndex = 20;
@@ -392,6 +395,25 @@
             this.columnHeader4.Text = "Ngày sinh";
             this.columnHeader4.Width = 84;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Lớp";
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Số CMND";
+            this.columnHeader11.Width = 87;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Số điện thoại";
+            this.columnHeader12.Width = 107;
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "Địa chỉ liên lạc";
+            this.columnHeader13.Width = 111;
+            // 
             // cmsSinhVien
             // 
             this.cmsSinhVien.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -416,25 +438,6 @@
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
             this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Lớp";
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "Số CMND";
-            this.columnHeader11.Width = 87;
-            // 
-            // columnHeader12
-            // 
-            this.columnHeader12.Text = "Số điện thoại";
-            this.columnHeader12.Width = 107;
-            // 
-            // columnHeader13
-            // 
-            this.columnHeader13.Text = "Địa chỉ liên lạc";
-            this.columnHeader13.Width = 111;
             // 
             // frmChinh
             // 
@@ -471,6 +474,7 @@
             this.Text = "Nhập thông tin sinh viên";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmChinh_FormClosing);
             this.Load += new System.EventHandler(this.frmChinh_Load);
+            this.Click += new System.EventHandler(this.frmChinh_Click);
             this.cmsMonHoc.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.cmsSinhVien.ResumeLayout(false);

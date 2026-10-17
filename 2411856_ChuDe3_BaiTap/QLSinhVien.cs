@@ -213,11 +213,10 @@ namespace _2411856_ChuDe3_BaiTap
 
                 if (ten != "")
                 {
-                    string hoTen =
-                        sv.HoVaTenLot + " " + sv.Ten;
+                    
 
                     dungTen =
-                        hoTen.ToLower()
+                        sv.Ten.ToLower()
                         .Contains(ten.ToLower());
                 }
 
