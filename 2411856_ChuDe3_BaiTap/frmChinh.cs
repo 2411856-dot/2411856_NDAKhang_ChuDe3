@@ -14,7 +14,7 @@ namespace _2411856_ChuDe3_BaiTap
     public partial class frmChinh : Form
     {
         QLSinhVien QLSV;
-        bool daThayDoi = false;
+      
 
         public frmChinh()
         {
@@ -111,30 +111,7 @@ namespace _2411856_ChuDe3_BaiTap
             }
         }
 
-        private void frmChinh_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (daThayDoi)
-            {
-                DialogResult kq = MessageBox.Show(
-                    "Danh sách sinh viên đã được thay đổi.\nBạn có muốn lưu lại vào file không?",
-                    "Xác nhận thoát",
-                    MessageBoxButtons.YesNoCancel,
-                    MessageBoxIcon.Question);
-
-                if (kq == DialogResult.Yes)
-                {
-                   
-                    QLSV.LuuFile(); // Ghi file khi người dùng bấm Lưu
-                }
-                else if (kq == DialogResult.Cancel)
-                {
-                    e.Cancel = true; // Hủy lệnh thoát, giữ lại form
-                }
-            }
-        }
-
-        
-
+      
         private bool KiemTraDuLieu()
         {
             if (mtxtMSSV.Text.Trim() == "")
@@ -264,7 +241,8 @@ namespace _2411856_ChuDe3_BaiTap
                 return;
             }
 
-            daThayDoi = true;
+        
+            QLSV.LuuFile();
             HienThiDanhSach(QLSV.DanhSach);
             XoaTrang();
 
@@ -378,8 +356,9 @@ namespace _2411856_ChuDe3_BaiTap
             }
 
             QLSV.XoaNhieu(dsMSSV);
+            QLSV.LuuFile();
 
-            daThayDoi = true;
+           
             HienThiDanhSach(QLSV.DanhSach);
             XoaTrang();
 
@@ -407,6 +386,7 @@ namespace _2411856_ChuDe3_BaiTap
                 MessageBox.Show("Cập nhật thành công!");
 
                 HienThiDanhSach(QLSV.DanhSach);
+                QLSV.LuuFile();
             }
             else
             {

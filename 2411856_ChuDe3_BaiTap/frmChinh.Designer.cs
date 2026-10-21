@@ -472,7 +472,6 @@
             this.Controls.Add(this.label1);
             this.Name = "frmChinh";
             this.Text = "Nhập thông tin sinh viên";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmChinh_FormClosing);
             this.Load += new System.EventHandler(this.frmChinh_Load);
             this.Click += new System.EventHandler(this.frmChinh_Click);
             this.cmsMonHoc.ResumeLayout(false);
